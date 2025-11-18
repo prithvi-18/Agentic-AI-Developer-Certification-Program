@@ -215,14 +215,28 @@ Question: {user_query}
 
 Answer based ONLY on the context above:"""
             
-            # Generate response
+            # Generate response with Groq API error handling
             messages = [
                 SystemMessage(content=SYSTEM_PROMPT),
                 HumanMessage(content=full_prompt)
             ]
             
-            response = self.llm.invoke(messages)
-            answer = response.content
+            # THIS IS THE FIX - Wrapped LLM call with error handling
+            try:
+                response = self.llm.invoke(messages)
+                answer = response.content
+            except Exception as llm_error:
+                # Handle Groq API server errors (500, timeouts, etc.)
+                error_msg = str(llm_error)
+                if "500" in error_msg or "Internal Server Error" in error_msg:
+                    logger.error(f"Groq API temporarily unavailable: {llm_error}")
+                    return "⚠️ The AI service is temporarily unavailable. Please try again in a few moments.", relevant_docs
+                elif "timeout" in error_msg.lower():
+                    logger.error(f"Groq API timeout: {llm_error}")
+                    return "⚠️ Request timed out. Please try again.", relevant_docs
+                else:
+                    logger.error(f"Unexpected LLM error: {llm_error}")
+                    raise
             
             # Add to conversation history
             self.conversation_history.append(("assistant", answer))
