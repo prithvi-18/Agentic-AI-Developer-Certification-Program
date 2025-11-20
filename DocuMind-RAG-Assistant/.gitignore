@@ -1,0 +1,27 @@
+# Python and virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data and databases
+chroma_data/
+*.db
+*.sqlite
+
+# Output files
+*.log
+conversation_*.txt
