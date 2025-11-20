@@ -16,7 +16,7 @@ from src.utils import print_section
 def main():
     """Run basic RAG example"""
     
-    print_section("RAG Assistant - Basic Example")
+    print_section("DocuMind-RAG-Assistant - Basic Example")
     
     # Initialize RAG system
     print("Step 1: Initializing RAG system...")

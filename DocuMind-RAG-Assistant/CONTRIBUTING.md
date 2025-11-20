@@ -1,4 +1,4 @@
-# Contributing to RAG Assistant - Module 1 Project
+# Contributing to DocuMind-RAG-Assistant - Module 1 Project
 
 Thank you for your interest in contributing to this project! This document provides guidelines for contributing.
 

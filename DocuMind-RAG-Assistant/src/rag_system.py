@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 class RAGAssistant:
     """
-    Production-ready RAG Assistant with:
+    Production-ready DocuMind-RAG-Assistant with:
     ✅ Error handling
     ✅ Input validation
     ✅ Memory management
@@ -39,7 +39,7 @@ class RAGAssistant:
     """
     
     def __init__(self, documents_folder=DOCUMENTS_DIR):
-        """Initialize RAG Assistant with error handling"""
+        """Initialize DocuMind-RAG-Assistant with error handling"""
         try:
             load_dotenv()
             
@@ -70,8 +70,8 @@ class RAGAssistant:
             self.documents_folder = documents_folder
             self.conversation_history = []
             
-            logger.info("✓ RAG Assistant initialized successfully")
-            print("✓ RAG Assistant initialized")
+            logger.info("✓ DocuMind-RAG-Assistant initialized successfully")
+            print("✓ DocuMind-RAG-Assistant initialized")
             
         except Exception as e:
             logger.error(f"Failed to initialize RAG Assistant: {e}")

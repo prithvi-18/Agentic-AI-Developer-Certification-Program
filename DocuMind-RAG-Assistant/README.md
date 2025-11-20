@@ -1,4 +1,4 @@
-# RAG Assistant - Module 1 Project
+# DocuMind-RAG-Assistant - Module 1 Project
 ## Ready Tensor Agentic AI Developer Certification
 
 ## Project Overview
@@ -377,13 +377,13 @@ After building this project, you understand:
 
 ## Repository
 
-GitHub: [RAG Assistant Module 1](https://github.com/prithvi-18/Agentic-AI-Developer-Certification-Program)
+GitHub: [DocuMind-RAG-Assistant](https://github.com/prithvi-18/Agentic-AI-Developer-Certification-Program)
 
 ---
 
 ## Conclusion
 
-This RAG Assistant demonstrates a complete, production-ready implementation of Agentic AI concepts from Module 1. It combines proper software engineering practices with real AI functionality, serving as both a learning tool and a practical system for document-based question answering.
+This DocuMind-RAG-Assistant demonstrates a complete, production-ready implementation of Agentic AI concepts from Module 1. It combines proper software engineering practices with real AI functionality, serving as both a learning tool and a practical system for document-based question answering.
 
 **Created for:** Ready Tensor Agentic AI Developer Certification  
 **Module:** Module 1: Foundations of Agentic AI  

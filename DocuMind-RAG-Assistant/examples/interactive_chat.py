@@ -16,7 +16,7 @@ from src.utils import print_section
 def main():
     """Run interactive chat"""
     
-    print_section("RAG Assistant - Interactive Chat")
+    print_section("DocuMind-RAG-Assistant - Interactive Chat")
     
     # Initialize
     print("Initializing RAG system...")
