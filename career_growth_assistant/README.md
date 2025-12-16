@@ -263,6 +263,38 @@ All systems tested and fully operational.
 
 ---
 
+# 📊 System Evaluation
+
+CareerPath AI was evaluated using scenario-based functional testing to validate correctness, determinism, and orchestration reliability.
+
+**Evaluation approach:**
+- Executed multiple career-transition scenarios using `example_scenarios.py`
+- Verified LangGraph orchestrator completed all agent steps sequentially (4/4)
+- Manually validated tool outputs such as course recommendations, timelines, and checklists
+- Inspected logs to confirm correct state transitions and error-free execution
+
+**Observed results:**
+- Orchestrator success rate: **100% (4/4 agent steps per run)**
+- Runtime stability: No runtime exceptions observed
+- Output consistency: Each run produced skill-gap analysis, interview preparation, learning roadmap, and feedback strategy
+
+Compared to a single-prompt LLM approach, the multi-agent architecture produced more structured, repeatable, and traceable outputs.
+
+---
+
+# 🛠 Maintenance & License
+
+This project is maintained as part of the **ReadyTensor Agentic AI Developer Certification Program** and is intended as an educational and reference implementation.
+
+- **Maintenance:** Actively maintained for learning and experimentation
+- **Support:** Community-driven (issues and pull requests are welcome)
+- **Production SLA:** Not provided
+
+**License:**  
+Released under the **MIT License**. Free to use, modify, and distribute with attribution.
+
+---
+
 # 📦 Requirements
 
 All versions pinned in `requirements.txt`.
