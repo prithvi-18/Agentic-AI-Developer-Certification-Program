@@ -1,0 +1,13 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.ven003_3.11/
+
+# Environment variables / secrets
+.env
