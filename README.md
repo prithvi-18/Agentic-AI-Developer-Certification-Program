@@ -28,10 +28,14 @@ A fully orchestrated multi-agent system built using LangGraph to generate struct
 
 ---
 
-### 🔹 Module 3 — Work in Progress
-Upcoming project currently under development as part of the certification program.
+### 🔹 Module 3 — Autonomous Task Planner (Agentic Execution Loop)
+An autonomous agent system implementing a Plan → Execute → Evaluate → Retry/Replan loop.
+The system decomposes high-level goals into tasks, executes them step-by-step, evaluates results,
+and adapts dynamically using state-driven decision logic and safety guardrails.
 
-📁 Folder: `Module3-Work-In-Progress/` (to be added)
+📁 Folder: `Autonomous_Task_Planner/`  
+📄 Documentation: `Autonomous_Task_Planner/README.md`  
+🔗 Status: Completed and ready for evaluation
 
 ---
 
