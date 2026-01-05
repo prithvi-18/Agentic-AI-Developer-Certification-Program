@@ -34,6 +34,13 @@ if run_button:
         for task in final_state["completed_tasks"]:
             st.markdown(f"- {task}")
 
+        st.subheader("📝 Generated Output")
+
+        for task, output in final_state["results"].items():
+            st.markdown(f"**{task}**")
+            st.write(output)
+
+
         if final_state["failed_tasks"]:
             st.subheader("❌ Failed Tasks")
             for task in final_state["failed_tasks"]:

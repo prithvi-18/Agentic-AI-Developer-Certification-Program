@@ -17,13 +17,11 @@ def plan_tasks(state: dict) -> list[str]:
     # ----- Initial Planning -----
     if replan_count == 0:
         tasks = [
-            f"Identify key requirements to achieve the goal: {goal}",
-            "Break the goal into a clear sequence of steps",
-            "Generate detailed content for each step",
-            "Review overall completeness and coherence",
-            "Prepare final consolidated output"
+            f"Create a detailed 4-week Python interview preparation plan. "
+            f"Include weekly goals, daily topics, practice tasks, and revision strategy."
         ]
         return tasks
+
 
     # ----- Replanning Logic -----
     # If something failed, refine remaining tasks
